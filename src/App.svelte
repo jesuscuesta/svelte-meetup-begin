@@ -3,7 +3,8 @@
 </script>
 
 <main>
-	<h1>Hola {name}!</h1>
+	<h1>Hola {name.toUpperCase()}!</h1>
+	<p>{1 + 2 + 3}</p>
 </main>
 
 <style>
