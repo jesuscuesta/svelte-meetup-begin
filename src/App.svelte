@@ -6,6 +6,7 @@
     "https://media1.tenor.com/images/4a96d6c6ce310c9cc1b10b21ea327651/tenor.gif?itemid=14666652";
 
   let count = 0;
+  $: dcCount = count * 2;
 
   function votar() {
     count += 1;
@@ -38,4 +39,5 @@
 
 <main>
   <Dc />
+  <div>{dcCount}</div>
 </main>
