@@ -38,6 +38,6 @@
 </main>
 
 <main>
-  <Dc />
+  <Dc miembros={6} />
   <div>{dcCount}</div>
 </main>
