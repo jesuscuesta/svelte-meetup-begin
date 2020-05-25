@@ -2,7 +2,11 @@
 
 ---
 
-# svelte app
+# Por qué dedicarle tiempo en mi confinamiento a Svelte JS
+
+Vamos a desarrollar los primeros pasos con una aplicación de Svelte con ejemplos sencillos.
+
+## Initial readme
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 
