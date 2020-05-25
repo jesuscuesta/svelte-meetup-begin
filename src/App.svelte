@@ -5,12 +5,12 @@
   let src =
     "https://media1.tenor.com/images/4a96d6c6ce310c9cc1b10b21ea327651/tenor.gif?itemid=14666652";
 
-  let count = 0;
-  $: dcCount = count * 2;
-
-  function votar() {
-    count += 1;
-  }
+  const superheroes = {
+    miembros : 2,
+    nombres : "Wonderworman, SuperGirl",
+    poderes : "Volar, Superfuerza",
+    planeta : "Algún lugar"
+  };
 </script>
 
 <style>
@@ -29,15 +29,14 @@
     <img {src} alt={name} />
   </div>
 
-  <div>
-    <button on:click={votar}>
-      Votos {count} {count === 1 ? 'vez' : 'veces'}
-    </button>
-  </div>
-
 </main>
 
 <main>
-  <Dc miembros={6} />
-  <div>{dcCount}</div>
+  <Dc
+    miembros={3}
+    nombres="Superman, Batman, Linterna Verde"
+    poderes={'Volar, Superfuerza, ser de color verde'}
+    planeta={'La tierra'} />
+
+  <Dc {...superheroes} />
 </main>
