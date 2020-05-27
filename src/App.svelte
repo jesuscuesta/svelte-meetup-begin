@@ -5,6 +5,8 @@
 
   let marca = true;
 
+  let promise = toggle();
+
   const superheroes = {
     miembros: 2,
     nombres: "Wonderworman, SuperGirl",
@@ -23,8 +25,13 @@
       "https://www.laguiadelvaron.com/wp-content/uploads/2017/03/media1.popsugar-assets.com-Here-He-Getting-Down-Business.gif"
   };
 
-  function toggle() {
-		marca = !marca;
+  async function toggle() {
+	const resultado = await setTimeout(() => marca = !marca, 3000);
+	return marca;
+  }
+
+  function handleClick() {
+		promise = toggle();
 	}
 </script>
 
@@ -43,7 +50,14 @@
 </main>
 
 <main>
-  <button on:click={toggle}>Cambio</button>
+  <button on:click={handleClick}>Cambio</button>
+  {#await toggle}
+    <p>...buscando héroes</p>
+  {:then number}
+    <p>Hemos conseguido encontrarlos</p>
+  {:catch error}
+    <p style="color: red">{error.message}</p>
+  {/await}
 
   {#if marca}
     <Dc {...superheroes} />
