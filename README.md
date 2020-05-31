@@ -6,6 +6,18 @@
 
 Vamos a desarrollar los primeros pasos con una aplicación de Svelte con ejemplos sencillos.
 
+Las diferentes ramas que nos encontraremos son:
+
+- fase-1/functions
+- fase-2/imgs
+- fase-3/nested
+- fase-4/functions
+- fase-5/reactive
+- fase-6/props
+- fase-7/spread
+- fase-8/bucles
+- fase-9/await
+
 ## Initial readme
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
