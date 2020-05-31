@@ -18,6 +18,11 @@ Las diferentes ramas que nos encontraremos son:
 - fase-8/bucles
 - fase-9/await
 
+Los otros proyectos con Svelte, para la charla son:
+
+- [Svelte con Sapper inicial](https://github.com/jesuscuesta/svelte-sapper-meetup)
+- [Sapper pasandolo a Typescript](https://github.com/jesuscuesta/svelte-sapper-ts)
+
 ## Initial readme
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
